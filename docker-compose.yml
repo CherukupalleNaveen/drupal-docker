@@ -3,14 +3,10 @@ version: '3.8'
 services:
   drupal:
     container_name: drupal_web
-    build:
-      context: .
-      dockerfile: Dockerfile
+    image: drupal:10
     restart: unless-stopped
     ports:
       - "8080:80"
-    volumes:
-      - ./drupal:/opt/drupal/
     networks:
       - drupal_net
     depends_on:
