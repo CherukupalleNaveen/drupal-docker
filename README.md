@@ -5,7 +5,7 @@
     - Docker Installation: https://www.digitalocean.com/community/tutorials/how-to-install-and-use-docker-on-ubuntu-22-04
     - Docker Compose Installation: https://www.digitalocean.com/community/tutorials/how-to-install-and-use-docker-compose-on-ubuntu-22-04
 
-## How to setup the Local En?
+## How to setup the Local Environment?
 1. Clone this repository
 2. Make the "setup.sh" script executable using below command,
     ```
@@ -28,6 +28,14 @@ setup.sh script will do the below,
         - Docker will mount the local drupal project to the drupal_web container
     - Container-2: drupal_db
         - This container will be used as a DB for the above drupal site
+- Making the container up:
+    ```
+    docker-compose up -d
+    ```
+- Making the containers down:
+    ```
+    docker-compose down
+    ```
 
 ## Security Practices:
 - Using .env file to store the environment variables like DB Name, DB Username, DB Password, etc. and this file can be part of .gitignore
