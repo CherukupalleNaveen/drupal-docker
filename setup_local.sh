@@ -15,6 +15,3 @@ echo "Successfully copied settings.php!"
 
 sudo chmod -R 777 ./drupal/web/sites/default
 echo "Permissions granted for sites/default directory!"
-
-docker-compose up
-#docker-compose up -d
